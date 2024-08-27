@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-smtp" %}
-{% set version = "1.7.1" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_smtp-{{ version }}.tar.gz
-  sha256: 707c4e2d75ce328693b55429f1f771e00cd2a2d6b52ce14edc20cb6d785be76e
+  sha256: 2e9abc2cdbb29c66babb7b1edb515f869721c67296a7ae4ecee3b83556dd2e08
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - apache-airflow >=2.7.0
+    - apache-airflow >=2.8.0
 
 test:
   imports:
