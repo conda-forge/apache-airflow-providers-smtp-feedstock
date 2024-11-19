@@ -1,13 +1,13 @@
 {% set name = "apache-airflow-providers-smtp" %}
-{% set version = "1.8.0" %}
+{% set version = "1.8.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_smtp-{{ version }}.tar.gz
-  sha256: 2e9abc2cdbb29c66babb7b1edb515f869721c67296a7ae4ecee3b83556dd2e08
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_smtp-{{ version }}.tar.gz
+  sha256: 8144bc71c54cf03c165d2ea1364530e232ecc70b53847624400ba4786599ea6a
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.dev0
-    - flit-core >=3.2,<4
+    - python {{ python_min }}
+    - flit-core ==3.10.1
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - apache-airflow >=2.8.0
 
 test:
@@ -29,6 +29,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
