@@ -37,7 +37,7 @@ about:
   summary: Provider package apache-airflow-providers-smtp for Apache Airflow
   license: Apache-2.0
   license_family: Apache
-  license_file: airflow/providers/smtp/LICENSE
+  license_file: src/airflow/providers/smtp/LICENSE
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-smtp/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
