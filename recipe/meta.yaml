@@ -20,7 +20,6 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
-    - apache-airflow-providers-common-compat >=1.6.0
     - python >={{ python_min }}
     - apache-airflow >=2.9.0
     - apache-airflow-providers-common-compat >=1.6.0
