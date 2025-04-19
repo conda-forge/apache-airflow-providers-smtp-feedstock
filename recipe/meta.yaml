@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-smtp" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_smtp-{{ version }}.tar.gz
-  sha256: d049f99ea528a3d13cb08e11b164b85de92cf6d85b5dea240dfe596180bd8ae6
+  sha256: dacac9713c7f176f14efbc6e3ba285644616e942576ad90e15832b25f867a59f
 
 build:
   noarch: python
