@@ -1,5 +1,6 @@
 {% set name = "apache-airflow-providers-smtp" %}
 {% set version = "2.1.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
