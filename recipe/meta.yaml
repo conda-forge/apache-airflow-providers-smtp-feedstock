@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-smtp" %}
-{% set version = "2.3.1" %}
-{% set python_min = "3.10" %}
+{% set version = "2.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_smtp-{{ version }}.tar.gz
-  sha256: 45c9b0d4fd8f086568b0b8d263d48335c9ca2bd1cf72b566f1e68deee70007f9
+  sha256: d1b8678198dfa4d6ab90044d5715ce995e40fd09f8108a363bd297ac9f65542f
 
 build:
   noarch: python
@@ -23,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
-    - apache-airflow-providers-common-compat >=1.6.1
+    - apache-airflow-providers-common-compat >=1.8.0
     - aiosmtplib >=0.1.6
 
 test:
@@ -36,11 +35,13 @@ test:
     - pip
 
 about:
-  home: https://airflow.apache.org/
+  home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-smtp for Apache Airflow
   license: Apache-2.0
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
-  license_file: src/airflow/providers/smtp/LICENSE
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-smtp/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
