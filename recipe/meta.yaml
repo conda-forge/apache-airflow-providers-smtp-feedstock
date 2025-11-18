@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-smtp" %}
 {% set version = "2.3.2" %}
-{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -36,11 +35,13 @@ test:
     - pip
 
 about:
-  home: https://airflow.apache.org/
+  home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-smtp for Apache Airflow
   license: Apache-2.0
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
-  license_file: src/airflow/providers/smtp/LICENSE
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-smtp/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
