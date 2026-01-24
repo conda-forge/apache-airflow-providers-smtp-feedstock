@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-smtp
-  version: "2.4.2"
+  version: 2.4.2
 
 package:
   name: ${{ name|lower }}
@@ -25,7 +25,6 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.10.1
     - aiosmtplib >=0.1.6
-
 tests:
   - python:
       imports:
