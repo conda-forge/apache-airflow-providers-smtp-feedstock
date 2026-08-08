@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-smtp
-  version: "3.0.2"
+  version: "3.0.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_smtp-${{ version }}.tar.gz
-  sha256: 69138116969c03609bcfad9d2cc3b95c5426f9ca10be3673d2bfcefe7b3ac53c
+  sha256: 3f72dfbe41d5e0a04da2bc9d94c92a52d3625c58108345dbb9d281e55cd27d9d
 
 build:
   noarch: python
