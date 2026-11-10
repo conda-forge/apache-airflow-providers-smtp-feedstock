@@ -19,12 +19,12 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==4.1.0
+    - flit-core ==4.2.0
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.12.0
-    - aiosmtplib >=0.1.6
+    - aiosmtplib >=5.1.0
 tests:
   - python:
       imports:
